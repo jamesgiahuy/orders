@@ -1,0 +1,32 @@
+.tableWrap {
+  margin: 32px 0 42px;
+  padding: 0 60px;
+  .thead {
+    max-width: 1804px;
+    width: 100%;
+    background-color: #ffde4a;
+  }
+  .theadWrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 29.5px;
+    border-radius: 12px;
+    font-size: 1.6rem;
+    color: #041967;
+    align-items: center;
+    li {
+      text-align: center;
+      list-style: none;
+      font-weight: 600;
+    }
+  }
+  .item100px {
+    width: 140px;
+  }
+  .item200px {
+    width: 200px;
+  }
+  .item140px {
+    width: 100px;
+  }
+}
