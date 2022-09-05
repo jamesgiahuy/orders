@@ -4,6 +4,7 @@ import clsx from "clsx";
 import style from "./Content.module.scss";
 import Main from "../../components/Main";
 import Table from "../../components/Table";
+import Footer from "../Footer";
 
 const SidebarContent = () => {
   const classes = clsx(style.contentSidebar);
@@ -13,6 +14,7 @@ const SidebarContent = () => {
       <HeaderContent />
       <Main />
       <Table />
+      <Footer />
     </div>
   );
 };
