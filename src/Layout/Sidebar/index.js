@@ -1,21 +1,30 @@
 import style from "./SideBar.module.scss";
 import clsx from "clsx";
 import React from "react";
+import { useState } from "react";
 import { Route, Routes, Link } from "react-router-dom";
 
 import Catagory from "../../components/Catagory";
 
 const Sidebar = () => {
+  const [classes, setClass] = useState("");
+
   const handleWrapper = () => {
     const wrapper = document.querySelector(".wrapper");
-    wrapper.classList.add("fixWidth");
-    console.log(wrapper);
+    var newClass = wrapper.classList.add("fixWidth");
+    setClass(newClass);
+  };
+
+  const handleHomepage = () => {
+    const wrapper = document.querySelector(".wrapper");
+    var newClass = wrapper.classList.remove("fixWidth");
+    setClass(newClass);
   };
   return (
     <div className={style.sidebarWrap}>
-      <div className={style.logoSidebar}>
+      <Link to="/" className={style.logoSidebar} onClick={handleHomepage}>
         <img src="/images/image 6.svg" />
-      </div>
+      </Link>
       <img src="/images/Line 79.svg" />
       <Link
         onClick={handleWrapper}

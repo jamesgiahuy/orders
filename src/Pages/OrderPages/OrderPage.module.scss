@@ -29,9 +29,56 @@
     padding: 32px;
     border: 2px solid #efe6d8;
     border-radius: 10px;
+    h3 {
+      padding-top: 24px;
+    }
     .wrapInformation {
       display: flex;
       gap: 50px;
+    }
+    .wrapInformation2 {
+      div:first-child {
+        max-width: 822px;
+      }
+    }
+    div:nth-child(3) {
+      margin-top: 16px;
+    }
+    .checkboxItemMedication {
+      margin-bottom: 16px;
+    }
+    div:last-child {
+      div {
+        position: relative;
+        padding-left: 32px;
+        max-width: 508px;
+        img {
+          position: absolute;
+          left: 0;
+          bottom: 50%;
+          transform: translate(0%, 50%);
+        }
+      }
+    }
+  }
+  .colorf2 {
+    background-color: #f2f2f2;
+    border: none;
+    .wrapInformation {
+      div {
+        width: 50%;
+        max-width: 604px;
+      }
+      div:first-child {
+        position: relative;
+      }
+      input {
+        background-color: #f2f2f2;
+        color: #828282;
+      }
+      label {
+        color: #828282;
+      }
     }
   }
 }
