@@ -44,3 +44,7 @@ a {
   max-width: 1924px;
   padding: 6rem;
 }
+.fixWidth {
+  max-width: 1779px;
+  width: 100%;
+}

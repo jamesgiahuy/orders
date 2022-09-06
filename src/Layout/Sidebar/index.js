@@ -6,13 +6,22 @@ import { Route, Routes, Link } from "react-router-dom";
 import Catagory from "../../components/Catagory";
 
 const Sidebar = () => {
+  const handleWrapper = () => {
+    const wrapper = document.querySelector(".wrapper");
+    wrapper.classList.add("fixWidth");
+    console.log(wrapper);
+  };
   return (
     <div className={style.sidebarWrap}>
       <div className={style.logoSidebar}>
         <img src="/images/image 6.svg" />
       </div>
       <img src="/images/Line 79.svg" />
-      <Link to="/orders" className={style.btnOrderSidebar}>
+      <Link
+        onClick={handleWrapper}
+        to="/orders"
+        className={style.btnOrderSidebar}
+      >
         <img src="/images/add file.svg" />
         <span>Create Order</span>
       </Link>
