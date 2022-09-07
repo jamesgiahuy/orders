@@ -24,6 +24,18 @@
     font-weight: 500;
     color: #008dff;
   }
+  .containerFluid:last-child {
+    .wrapInformation:last-child {
+      flex-wrap: wrap;
+      gap: 45px;
+      div:first-child {
+        max-width: 496px;
+      }
+      div:not(:first-child) {
+        max-width: 140px;
+      }
+    }
+  }
   .containerFluid {
     background-color: #fffbf5;
     padding: 32px;
@@ -36,18 +48,19 @@
       display: flex;
       gap: 50px;
     }
+
     .wrapInformation2 {
       div:first-child {
         max-width: 822px;
       }
     }
-    div:nth-child(3) {
-      margin-top: 16px;
-    }
+    // div:nth-child(3) {
+    //   margin-top: 16px;
+    // }
     .checkboxItemMedication {
       margin-bottom: 16px;
     }
-    div:last-child {
+    .pickUpRequestime {
       div {
         position: relative;
         padding-left: 32px;

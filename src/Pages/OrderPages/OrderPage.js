@@ -4,10 +4,14 @@ import Checkbox from "../../components/Checkbox";
 import Label from "../../components/LabelInput";
 import clsx from "clsx";
 import Label2 from "../../components/LabelInput/index2";
+import Label3 from "../../components/LabelInput/index3";
+import Button from "../../components/Button";
 
 const OrderPage = () => {
   const classes1 = clsx(style.wrapInformation, style.wrapInformation2);
   const classes2 = clsx(style.containerFluid, style.colorf2);
+  const classes3 = clsx(style.wrapInformation, style.pickUpRequestime);
+
   return (
     <div className={style.container}>
       <h2>EDIT ORDER</h2>
@@ -83,7 +87,7 @@ const OrderPage = () => {
           </div>
 
           <h3>Pickup Request Time</h3>
-          <div className={style.wrapInformation}>
+          <div className={classes3}>
             <Label2
               title="Estimated For Pickup"
               type="text"
@@ -95,8 +99,21 @@ const OrderPage = () => {
               src="/images/calendar.svg"
             />
           </div>
+          <h3>Pickup Request Time</h3>
+          <div className={style.wrapInformation}>
+            <Label3
+              title="Estimated For Dropoff"
+              type="text"
+              src="/images/arrowdownsvg.svg"
+            />
+            <Label title="Length (Inch)" type="text" />
+            <Label title="Width (Inch)" type="text" />
+            <Label title="Height (Inch)" type="text" />
+            <Label title="Weight (LBS)" type="text" />
+          </div>
         </div>
       </div>
+      <Button />
     </div>
   );
 };
