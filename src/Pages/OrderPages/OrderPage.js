@@ -51,24 +51,26 @@ const OrderPage = () => {
           <h3>Medication Info</h3>
 
           <div className={style.wrapInformation}>
-            <Label title="First Name" type="text" />
-            <Label title="First Name" type="text" />
-            <Label title="First Name" type="text" />
-            <Label title="First Name" type="text" />
-            <Label title="First Name" type="text" />
-            <img src="/images/garbage.svg" alt="#" />
+            <Label title="Medication Name" type="text" />
+            <Label title="Prescription Number (optional)" type="text" />
+            <Label title="Quantity" type="number" />
+            <Label title="Copayment ($)" type="number" />
+            <div className={style.medicationImg}>
+              <img src="/images/garbage.svg" alt="#" />
+            </div>
           </div>
 
           <div className={style.wrapInformation}>
-            <Label title="First Name" type="text" />
-            <Label title="First Name" type="text" />
-            <Label title="First Name" type="text" />
-            <Label title="First Name" type="text" />
-            <Label title="First Name" type="text" />
-            <img src="/images/plus.svg" alt="#" />
+            <Label title="Medication Name" type="text" />
+            <Label title="Prescription Number (optional)" type="text" />
+            <Label title="Quantity" type="number" />
+            <Label title="Copayment ($)" type="number" />
+            <div className={style.medicationImg}>
+              <img src="/images/plus.svg" alt="#" />
+            </div>
           </div>
           <div className={style.wrapInformation}>
-            <Label title="First Name" type="text" />
+            <Label title="Note" type="text" />
           </div>
           <div className={style.checkboxItemMedication}>
             <Checkbox title="Contains controlled medications." />
